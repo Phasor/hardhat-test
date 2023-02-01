@@ -1,15 +1,13 @@
 # Sample Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Sample Hardhat project.
 
-Try running some of the following tasks:
+The deploy scripts in /scripts show a mix of using raw ethers (deployTestEthers.js) and using the HardHat Runtime Environment version of ethers (deployTest.js).
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+Execute the HRE deploy script with:
+`npx hardhat run deployTest.js --network goerli`
 
-deployTest.js is my code, deploy.js is the hardhat example.
+Execute raw ethers deploy script with:
+`node deployTestEthers.js`
+
+
